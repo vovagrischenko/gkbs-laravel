@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('sku');
             $table->string('name');
             $table->foreignId('category_id')->constrained();
+            $table->timestamps();
         });
     }
 
